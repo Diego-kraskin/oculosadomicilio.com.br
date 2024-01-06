@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="keywords" content="Otica, lentes de grau exame de vista, lentes transitions, varilux, kodak, vanguard laboratorio otico em Porto Alegre">
+<meta name="description" content="Otica a domicilio serviços com qualidade e preço juntos.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óculos a Domicilio</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--BoxIcons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /*---------------GOOGLE FONTS-------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:wght@300;400;700&display=swap');
+
+/*---------------VARIABLES CSS-------------------*/
+:root {
+    --header-height: 4.5rem;
+
+    /*---------------COLLORS -------------------*/
+    --first-color: #932b69;
+    --first-color_alt: #7a1d64;
+    --first-color_alt_light: #ba369d;
+    --light-color: #ffffff;
+    --text-color: #171f07;
+    --body-color: #ffffff;
+    --container-color: #f1fcdc;
+
+    /*---------------FONT  AND TYPOGRAPHY-------------------*/
+    --body-font: "Lato", sans-serif;
+    --font-logo: 'Italiana', serif;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+
+    /*---------------FONT WEIGHT-------------------*/
+    --font-light: 300;
+    --font-medium: 400;
+    --font-bold: 700;
+
+    /*---------------MARGINS-------------------*/
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*---------------Z INDEXS-------------------*/
+    --Z-fixed: 100;
+    --z-tooltip: 10;
+}
+
+/*---------------BASE-------------------*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*---------------BUTTONS-------------------*/
+.btn {
+    width: 100%;
+    background: linear-gradient(to right, #932b6d 0%, #b91879 100%);
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1.5rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+    letter-spacing: 4px;
+    text-align: center;
+    outline: none;
+    color: var(--light-color);
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+.btn-outline {
+    width: 100%;
+    background-color:transparent;
+    border: 1px solid var(--first-color);
+    color: var(--first-color);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1.5rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+    letter-spacing: 4px;
+    text-align: center;
+    outline: none;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-outline:hover {
+    background-color: var(--first-color_alt);
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+}
+
+/*--------------- CLASS CSS-------------------*/
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--font-logo);
+    font-size: var(--h1-font-size);
+    letter-spacing: 4px;
+    color: var(--first-color);
+    margin-top: var(--mb-6);
+}
+
+.section-subtitle {
+    display: block;
+    color: rgb(109, 13, 72);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-light);
+    letter-spacing: 4px;
+    margin-bottom: var(--mb-1);
+}
+
+.section-text {
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    letter-spacing: 1.2px;
+    line-height: 24px;
+    margin-bottom: var(--mb-2);
+}
+
+/*---------------LAYOUT-------------------*/
+
+.bd-container {
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1, 5rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--Z-fixed);
+    background-color: var(--light-color);
+}
+
+.bg-container {
+    background-color: var(--container-color);
+}
+
+/*-----------NAV---------------*/
+.nav{
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+@media (max-width: 960px){
+    .nav__menu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        text-align: right;
+        padding: 0 2rem;
+        background-color: var(--container-color);
+        border-radius: 150px 0 0 0;
+        box-shadow: -10px -8px 4px rgba(0, 0, 0, 0.1);
+        z-index: var(--z-tooltip);
+        transition: 0.4s;
+    }
+
+    .nav__menu .logo{
+        padding-left: 4rem;
+    }
+
+    .nav__menu .nav__item {
+        margin-bottom: var(--mb-2);
+    }
+    
+    .nav__menu .nav__item:first-child {
+        margin-top: 8rem;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+}
+
+.logo{
+    font-family: var(--font-logo);
+    font-size: 2.0rem;
+    padding-top: 3rem;
+    background: linear-gradient(to right, #932b7c 0%, #ef51cd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav__item .btn{
+    font-size: var(--small-font-size);
+    padding: .3rem 1rem;
+}
+
+.nav__link {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    color: var(--first-color);
+}
+
+.nav__link:hover, .active-link {
+    padding-bottom: var(--mb-1);
+    border-bottom: 1px solid var(--first-color);
+}
+
+.nav__toggle{
+    font-size:var(--h1-font-size);
+    color: var(--first-color);
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--first-color);
+    margin-right: 1rem;
+    border-radius: 6px;
+    z-index: var(--Z-fixed);
+}
+
+.nav__toggle:hover {
+    background-color: var(--first-color);
+    color: var(--first-color);
+}
+
+/* SCROLL HEADER*/
+.scroll-header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* SCROLL TOP*/
+.scrolltop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: var(--z-tooltip);
+    transition: 0.4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover {
+    background-color: var(--first-color_alt_light);
+    color: var(--first-color_alt);
+}
+
+.scroll__top__icon {
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+
+/* SHOW SCROLL TOP*/
+.scroll-top {
+    visibility: visible;
+    bottom: 1rem;
+}
+
+/*-------------HOME---------------*/
+.home__container {
+    padding: 2rem 1rem;
+}
+
+.home__data {
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
+
+.home__title {
+    font-size: 2.6rem;
+    color: black;
+}
+
+.home__title span {
+    font-family: var(--font-logo);
+    font-size: 1.9rem;
+    letter-spacing: 4px;
+    color: var(--first-color);
+}
+
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: black;
+    margin-bottom: var(--mb-5);
+}
+
+.home__btn {
+    padding: 0 3rem;
+}
+
+.home__btn a {
+    margin-bottom: 1rem;
+}
+
+/*------------SOBRE---------------*/
+.about__container {
+    padding: 0 2rem;
+}
+
+.about__chefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: var(--mb-3);
+}
+
+.chefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chefs .img__chefs {
+    width: 150px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.chefs .img__chefs:hover {
+    transform: scale(1.1);
+}
+
+.chefs span {
+    font-size: var(--small-font-size);
+    color: black;
+    margin-top: 1rem;
+}
+
+.about__data {
+    margin-top: var(--mb-4);
+    background-color: var(--light-color);
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.about__data .section-text {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    line-height: 32px;
+}
+
+/*---------- CARDAPIO------------*/
+.cardapio__container {
+    padding: 1rem 4rem;
+}
+
+.card {
+height: 700px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-top: var(--mb-4);
+    margin-bottom: var(--mb-4);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-1:hover {
+    transform: scale(1.1);
+}
+
+.card__img-ex {
+    width: 180px;
+    height: 180px;
+    
+}
+
+.card-1{
+height: 500px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-top: var(--mb-4);
+    margin-bottom: var(--mb-4);
+    transition: 0.4s;
+}
+
+
+.card img {
+    border-radius: 8px 8px 0 0;
+}
+
+
+.card__data {
+    height: 6rem;
+}
+
+.card__data h3 {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-left: var(--mb-2);
+}
+
+.card__data .card__descripition {
+    font-size: 1.0rem;
+    margin-left: var(--mb-2);
+}
+
+.card__data small {
+    font-weight: var(--font-light);
+    font-size: var(--normal-font-size);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+}
+
+.card__preci {
+    margin-top: 390px
+}
+
+.card__preci-p {
+    margin-top: 375px
+}
+
+.card__preci-ex {
+    margin-top: 380px
+}
+
+.card__preci-v {
+    margin-top: 218px
+}
+
+.card__preci-1 {
+    margin-top: 180px
+}
+
+.card__preci span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__preci-p span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__preci-v span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__preci-1 span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__preci-ex span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    background-color: var(--first-color);
+    border-radius: 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card__cart:hover {
+    background-color: var(--first-color_alt);
+}
+
+/*----------DELIVERY-----------*/
+.delivery {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/bg-delivery.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.delivery__container {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    padding: 1rem;
+}
+.delivery__data h1{
+    margin: 0;
+}
+
+.delivery__data {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+}
+
+.delivery__data a {
+    width: 50%;
+    margin-top: var(--mb-3);
+    letter-spacing: 3px;
+}
+
+/*----------CONTATO---------*/
+.contato__container {
+    padding: 1rem 2rem;
+}
+
+.contato__cta {
+    margin-bottom: var(--mb-3);
+    text-align: center;
+}
+
+.contato__title {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+}
+
+.contato__cta p {
+    font-weight: var(--normal-font-size);
+    font-size: var(--h3-font-size);
+    line-height: 28px;
+    margin-bottom: var(--mb-2);
+}
+
+.contato__cta a {
+    margin-bottom: var(--mb-2);
+}
+
+.contato__form .contato__title {
+    text-align: center;
+}
+
+.form-control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-size: var(--small-font-size);
+}
+
+.form-control input,
+textarea {
+    font-size: var(--normal-font-size);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: #ffffff;
+    border: 2px solid #b975b5;
+    margin-bottom: var(--mb-2);
+}
+
+.form-control textarea {
+    resize: none;
+    outline: none;
+    margin-bottom: var(--mb-6);
+}
+
+.form-control button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*---------COMPARTILHAR-----------*/
+.compartilhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/bg-compartilar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.compartilhar__container .section-title {
+    margin-top: var(--mb-3);
+}
+
+.compartilhar__container p {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+}
+
+.compartilhar__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-3);
+}
+.compartilhar__social:hover > .insta,
+.compartilhar__social:hover > a{
+    color: var(--text-color);
+}
+
+.compartilhar__social a,
+.insta {
+    font-weight: var(--font-medium);
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+}
+
+.insta {
+    margin-top: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+
+
+/*--------------FOOTER-----------------*/
+.footer__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.company,
+.services,
+.info,
+.addres {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--mb-5);
+}
+
+.company .logo {
+    font-family: var(--font-logo);
+    font-size: var(--h3-font-size);
+    line-height: 29px;
+    color: var(--first-color);
+    letter-spacing: 4px;
+}
+
+.company small {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.company .social__media a {
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    border: .1rem solid var(--text-color);
+    padding: .1rem;
+    border-radius: 50%;
+}
+
+.company .social__media a:hover {
+    color: var(--first-color);
+    border: .1rem solid var(--first-color);
+}
+
+.services a:hover,
+.info a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.footer__title {
+    font-weight: var(--font-bold);
+    font-size: var(--h3-font-size);
+    line-height: 29px;
+    color: var(--first-color);
+}
+
+.footer__subtittle {
+    font-size: var(--normal-font-size);
+    line-height: 22px;
+    color: black;
+}
+
+/*-------MEDIA QUERY------*/
+@media (min-width: 576px) {
+    .home__img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cardapio__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .contato__form{
+        margin-bottom: var(--mb-6);
+    }
+
+    .footer__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --big-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+    }
+    .logo{
+        margin: 0 2rem;
+    }
+    .home__container {
+        padding: 3rem 2rem;
+    }
+
+    .home__img {
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .nav__list{
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav__item{
+        margin-left: var(--mb-3);
+    }
+    
+    .nav__link{
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-bold);
+        color: var(--first-color);
+    }
+
+    .nav__item:first-child {
+        margin-top: 0;
+    }
+
+    .nav__toggle{
+        display: none;
+    }
+
+    .home__container {
+        padding: 0;
+        height: calc(100vh - var(--header-height));
+        align-content: center;
+        grid-template-columns: 60% 40%;
+    }
+
+    .home__data {
+        margin-top: var(--mb-6);
+    }
+
+    .home__btn {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .home__btn a:first-child {
+        margin-right: var(--mb-2);
+    }
+
+    .home__img {
+        width: 100%;
+    }
+
+    .about .section-subtitle{
+        padding: 0 3REM;
+    }
+
+    .about__container {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    .cardapio__container {
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contato__container {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+        margin-top: var(--mb-2);
+    }
+
+    .form-control button {
+        bottom: -.5rem;
+    }
+
+    .footer__container {
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.logo-oculos{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+    </style>
+</head>
+
+<body>
+    <!--------------SCROLL TOP------------------------>
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevrons-up scroll__top__icon'></i>
+    </a>
+
+    <!--------------HEADER------------------------>
+    <header class="header" id="header">
+        <!-- NAV -->
+        <nav class="nav bd-container">
+            <h1> <a href="#" class="logo">Óculos a Domicilio</a></h1>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#cardapio" class="nav__link">Lentes</a></li>
+                    <li class="nav__item"><a href="#delivery" class="nav__link">Agendar exame</a></li>
+                    <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+                    <li class="nav__item"><a href="https://wa.me/c/555191042626" class="btn">Catálogo</a></li>
+                </ul>
+            </div>
+
+            <!--MENU TOGGLE-->
+            <div class="nav__toggle">
+                <i class='bx bx-menu-alt-right' id="nav-toggle"></i>
+            </div>
+            <!-- END MENU TOGGLE -->
+        </nav>
+        <!-- END NAV -->
+    </header>
+    <!-- END HEADER -->
+
+    <!--MAIN-->
+    <main>
+        <!--HOME-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Bem vindo a <span class="logo">Óculos a Domicilio</span></h1>
+                    <h2 class="home__subtitle">Nós vamos até você</h2>
+                    <div class="home__btn">
+                        <a href="https://wa.me/5551991042626" class="btn">Agendar exame</a>
+                        <a href="https://wa.me/5551996568821" class="btn-outline">Orçamento</a>
+                    </div>
+                </div>
+
+                <img src="optometrista.jpg" alt="salada principal" class="home__img">
+            </div>
+        </section>
+        <!-- END HOME -->
+
+        <!-- SOBRE -->
+        <section class="about bg-container section" id="sobre">
+            <h1 class="section-title">Sobre</h1>
+            <h2 class="section-subtitle"></h2>
+            <div class="about__container bd-container bd-grid">
+                <div class="about__chefs">
+                    <!--minha 
+                    <div class="chefs">
+                        <img src="./diego.jpeg" alt="Chef Kalil" class="img__chefs">
+                        <span>Diego Kraskin</span>
+                    </div> foto-->
+
+                    <div class="chefs">
+                        <img src="./xuxu.jpeg" alt="fernada" class="img__chefs">
+                        <span>Fernanda Moreira</span>
+                    </div>
+                </div>
+                <div class="about__data">
+                    <p class="section-text"> Somos uma ótica a domicílio, trabalhamos no ramo óptico com lentes de ótima qualidade, temos como missão proporcionar o melhor para nossos clientes, melhores produtos, melhor atendimento e preços diferenciados do mercado óptico. <br><br>
+                        Com o pensamento e objetivo de atedender pessoas com alguma dificuldade de mobilidde ou até mesmo por falta de tempo, vimos nesse publico uma oportunidade de criar a Óculos a Domicilio, e desde de então temos o objetivo de atingir mais pessoas levando até elas a saúde ocular que precisa sem sair de casa.</p>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!-- END SOBRE -->
+
+        <!-- CARDÁPIO -->
+        <section class="cardapio section" id="cardapio">
+            <h1 class="section-title">Conheça nossas lentes</h1>
+            <h2 class="section-subtitle">Promoção da semana</h2>
+            <div class="cardapio__container bd-container bd-grid">
+                <div class="card-1">
+                     <div class="card__img">
+                        <img src="LENTE-SIMPLES.jpeg" alt="Salada Primavera">
+                     </div>
+                     <div class="card__data">
+                        <h3>Visão simples</h3>
+                        <div class="card__descripition">
+                            <small>Esse tipo de lente atende também
+                                pelo nome de monofocal, sendo a sua
+                                 função corrigir um campo de visão para
+                                  uma única distância: perto ou longe<br>(Miopia ou Hipermetropia).</small>
+                        </div>
+                     </div>
+                     <div class="card__preci-v">
+                        <span>R$ 180,00</span>
+                       </div>
+                      <i class='bx bxs-cart card__cart'></i>
+                </div>
+
+                <div class="card-1">
+                    <div class="card__img">
+                       <img src="campo-first.jpeg" alt="Salada Primavera">
+                    </div>
+                    <div class="card__data">
+                       <h3>Multifocal First</h3>
+                       <div class="card__descripition">
+                           <small>Lente multifocal de entrada, ideal para
+                            usuários iniciantes que buscam conforto,
+                            boa adaptação aliados à economia.
+                            Possui desenho equilibrado</small>
+                       </div>
+                    </div>
+                    <div class="card__preci-1">
+                       <span>R$ 299,00</span>
+                      </div>
+                     <i class='bx bxs-cart card__cart'></i>
+               </div>
+
+               <div class="card-1">
+                <div class="card__img">
+                   <img src="class.jpeg" alt="Salada Primavera"> 
+                </div>
+                <div class="card__data">
+                   <h3>Mutifocal Class</h3>
+                   <div class="card__descripition">
+                       <small>Indicada para quem busca seu primeiro
+                        Freeform e para primeiros usuários:
+                        proporciona uma boa adaptação;
+                        Possui desenho equilibrado;
+                        Bom custo-benefício.</small>
+                   </div>
+                </div>
+                <div class="card__preci-1">
+                   <span>R$ 500,00</span>
+                  </div>
+                 <i class='bx bxs-cart card__cart'></i>
+           </div>
+
+           <div class="card-1">
+            <div class="card__img">
+               <img src="ultra.jpeg" alt="Salada Primavera">
+            </div>
+            <div class="card__data">
+               <h3>Multifocal Ultra</h3>
+               <div class="card__descripition">
+                   <small>
+                    Lente desenvolvida para usuários que buscam
+                    uma opção confortável e econômica.
+                    Possui uma distribuição de potência que
+                    proporciona conforto e amplitude visual
+                    nos campos de longe e perto.
+                    Ótimo custo-benefício</small>
+               </div>
+            </div>
+            <div class="card__preci-1">
+               <span>R$ 550,00</span>
+              </div>
+             <i class='bx bxs-cart card__cart'></i>
+       </div>
+
+       <div class="card">
+        <div class="card__img">
+           <img src="supreme.jpeg" alt="Salada Primavera">
+        </div>
+        <div class="card__data">
+           <h3>Multifocal Supreme</h3>
+           <div class="card__descripition">
+               <small>Proporciona uma visão natural,
+                Transição suave entre as visões de perto e
+                de longe, trazendo mais conforto.
+                Possui desenho equilibrado
+                Proporciona uma ótima adaptação
+                Corredor personalizado de acordo com as
+                medidas do usuário
+                Excelente custo-benefício:
+                Produto que proporciona maior liberdade na
+                escolha de armações</small>
+           </div>
+        </div>
+        <div class="card__preci">
+           <span>R$ 600,00</span>
+          </div>
+         <i class='bx bxs-cart card__cart'></i>
+   </div>
+
+
+                <div class="card">
+                    <div class="card__img">
+                       <img src="master.jpeg" alt="Salada Primavera">
+                    </div>
+                    <div class="card__data">
+                       <h3>Multifocal Master</h3>
+                       <div class="card__descripition">
+                           <small>Lente ideal para usuários que utilizam mais a visão de perto,
+                            mas que também buscam uma lente que ofereça bons
+                            campos visuais nas distâncias intermediária e de longe.
+                            extended dyb
+                            Possui desenho que privilegia o campo de
+                            perto,
+                             Proporciona uma excelente adaptação;
+                            Corredor personalizado de acordo com as
+                            medidas do usuário
+                            Ótimo custo-beneficio, 
+                            Produto que proporciona maior liberdade na
+                            escolha de armações</small>
+                       </div>
+                    </div>
+                    <div class="card__preci">
+                       <span>R$650,00</span>
+                      </div>
+                     <i class='bx bxs-cart card__cart'></i>
+               </div>
+
+                <div class="card">
+                    <div class="card__img">
+                        <img src="premium.jpeg" alt="Salada Green">
+                    </div>
+                     <div class="card__data">
+                         <h3>Multifocal Premium </h3>
+                        <div class="card__descripition">
+                            <small>Possui desenho com os campos
+                                intermediário e perto otimizados;
+                                Proporciona uma excelente adaptação e
+                                transição suave entre os campos, 
+                                Corredor personalizado de acordo com as
+                                medidas do usuário
+                                Produto que proporciona maior liberdade na
+                                escolha de armações</small>
+                        </div>
+                      </div>
+                      <div class="card__preci-p">
+                          <span>R$ 750,00</span>
+                     </div>
+                    <i class='bx bxs-cart card__cart'></i>
+                </div>
+
+               
+                <div class="card">
+                    <div class="card__img-ex">
+                        <img src="extreme.jpeg" alt="Salada Fit">
+                    </div>
+                    <div class="card__data">
+                        <h3>Multifocal Extreme</h3>
+                        <div class="card__descripition">
+                            <small>Proporciona uma visão estável, que resulta
+                                em uma excelente adaptação.
+                                
+                                Transição suave entre os campos e controle
+                                de distorção,
+                                Corredor personalizado de acordo com as
+                                medidas do usuário
+                                Produto que proporciona maior liberdade na
+                                escolha de armações,
+                                Ótimo custo-benefício</small>
+                        </div>
+                    </div>
+                    <div class="card__preci-ex">
+                        <span>R$ 850,00</span>
+                    </div>
+                    <i class='bx bxs-cart card__cart'></i>
+                </div>
+            </div>
+
+
+            
+        </section>
+        <!-- END CARDÁPIO -->
+
+        <!-- DELIVERY -->
+        <section class="delivery" id="delivery">
+            <div class="delivery__container">
+                <div class="delivery__data">
+                    <h1 class="section-title">Optometrista</h1>
+                    <h2 class="section-subtitle">Agende seu exame no conforto da sua casa</h2>
+                    <a href="https://wa.me/5551991042626" class="btn">AGENDAR</a>
+                </div>
+            </div>
+        </section>
+        <!-- END DELIVERY -->
+
+        <!-- CONTATO -->
+        <section class="contato section" id="contato">
+            <h1 class="section-title">Contato</h1>
+            <h2 class="section-subtitle">Estamos ansiosos por falar com você</h2>
+            <div class="contato__container bd-container bd-grid">
+                <div class="contato__form">
+                    <h3 class="contato__title">Fale Conosco</h3>
+                    <form class="form-control">
+                        <label for="name">NOME</label>
+                        <input type="text" id="name">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" id="email">
+                        <label for="mensagem">MENSAGEM</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+                        <button class="btn">ENVIAR MENSAGEM</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- END CONTATO -->
+
+        <!-- COMPARTILHAR -->
+        <section class="compartilhar">
+            <div class="compartilhar__container">
+                <h1 class="section-title">Compartilhe</h1> 
+                <p>Óculos a Domicilio</p>
+                <div class="compartilhar__social">
+                     <a href="https://www.instagram.com/oculos_a_domocilio_poa/"><i class='bx bxl-instagram'></i></a>
+                   
+                </div>
+            </div>
+        </section>
+        <!-- END COMPARTILHAR -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="footer section bg-container">
+        <div class="footer__container bd-container">
+            <div class="company">
+                <h3 class="logo">Óculos a Domicilio</h3>
+                <small>Redes sociais</small>
+                <div class="social__media">
+                    <a href="https://www.instagram.com/oculos_a_domocilio_poa/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100091737543673"><i class='bx bxl-facebook'></i></a>
+        
+                </div>
+            </div>
+            <div class="services">
+                <h3 class="footer__title">Serviços</h3>
+                <a href="https://wa.me/5551996568821" class="footer__subtittle">Optometrista</a>
+                <a href="" class="footer__subtittle">Lentes de grau</a>
+            </div>
+            <div class="info">
+                <h3 class="footer__title">Mais informações</h3>
+                <a href="https://wa.me/5551991042626" class="footer__subtittle">Diego</a>
+                <a href="https://wa.me/5551996568821" class="footer__subtittle">Fernanda</a>
+            </div>
+            <div class="addres">
+                <h3 class="footer__title">Endereço</h3>
+                <small class="footer__subtittle">Porto Alegre - Brasil</small>
+                <small class="footer__subtittle">Sem loja fisica</small>
+                <small class="footer__subtittle">(51)99104-2626-(51)99656-8821</small>
+                <small class="footer__subtittle"></small>
+            </div>
+        </div>
+        <p>Kraskin Web Sites</p>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
